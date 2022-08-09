@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="console.log('This button is clicked')">Clicked</button>
+    <button onclick="alert('This is my project')">Clicked-02</button>
+    <button onclick="document.body.style.backgroundColor = 'red'">Clicked For Red</button>
+    <button onclick="colorYellow()">Clicked For Yellow</button>
+    <button id="body-blue">Clicked For Blue</button>
+    <script>
+        const bodyBlue = document.getElementById('body-blue');
+        bodyBlue.onclick = colorBlue;
+        function colorBlue(){
+            document.body.style.backgroundColor = 'blue';
+        }
+        function colorYellow(){
+            document.body.style.backgroundColor = 'yellow';
+        }
+    </script>
+</body>
+</html>
